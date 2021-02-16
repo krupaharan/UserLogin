@@ -1,0 +1,22 @@
+/* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+body {
+    background-color: #eee;
+    max-height: 100%;
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+.bg-img {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    background-image: url('https://d24s38jd6z1bka.cloudfront.net/upload/images/content/header/ideas.png');
+}

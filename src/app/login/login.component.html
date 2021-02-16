@@ -1,0 +1,38 @@
+<div class="toolbar" role="banner">
+	<span style="padding: 20px;font-size: larger;">Sample Login App</span>
+	<div class="spacer"></div>
+	<div style="float: right;">
+		<span style="font-size: larger;cursor: pointer;">About</span>
+		<span style="padding: 20px;font-size: larger;cursor: pointer;">Contact</span>
+	</div>
+</div>
+
+<!--<app-home></app-home> -->
+
+<div class="container">
+	<div class="d-flex justify-content-center h-100">
+		<div class="card">
+			<div class="card-header">
+				<h3>Sign In</h3>
+				<div class="d-flex justify-content-end social_icon">
+				</div>
+			</div>
+			<div class="card-body">
+				<form [formGroup]="form" (ngSubmit)="onSubmit()">
+					<div class="input-group form-group">
+						<input type="email" class="form-control" ngModel email = "true" placeholder="email" formControlName="username">
+					</div>
+					<div class="input-group form-group">
+						<input type="password" class="form-control" placeholder="password" formControlName="password">
+					</div>
+					<span style="color: red;font-weight: bolder;font-size: 16px;" *ngIf="message">
+							Please provide valid crendentials
+					</span>
+					<div class="form-group" style="margin-top: 25px;text-align: center;">
+						<input type="submit" [disabled]="!form.valid" value="Submit" class="btn login_btn btn_primary">
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
