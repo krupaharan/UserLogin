@@ -28,11 +28,12 @@ export class LoginComponent implements OnInit {
       var username = this.form.value.username;
       var password = this.form.value.password;
       sessionStorage.setItem("userName", username);
-      if(username == "TEST" && password == "TEST"){
-        this._router.navigate(['home'])
+      this._router.navigate(['home'])
+      
+      /* if(username == "test@vmware.com" && password == "test123"){
       } else {
         this.message =  true;
-      }	
+      }	*/
     }
   }
 }
