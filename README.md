@@ -4,7 +4,7 @@ Angular based application for Login functionality
 
 ## Dependencies
 
-npm v6.10
+node v10.16.0, npm v6.9.0, Angular CLI v9.1.7 (Sharing the same version as per my system to avoid version compatability issues)
 
 Please make sure the to install the dependencies before going further.
 
