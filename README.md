@@ -4,8 +4,7 @@ Angular based application for Login functionality
 
 ## Dependencies
 
-npm v1.8
-ng v3.6 (Other versions also fine, but preferably 3+)
+npm v6.10
 
 Please make sure the to install the dependencies before going further.
 
